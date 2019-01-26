@@ -1,0 +1,23 @@
+type Query {
+  pruebamamastrosa: String
+}
+
+type Mutation {
+  registrar(data: UserNewInput!): User
+}
+
+input UserNewInput {
+  nombre: String!
+  apellido_paterno: String!
+  apellido_materno: String!
+  username: String!
+  password: String!
+}
+
+type User {
+  nombre: String
+  apellido_paterno: String
+  apellido_materno: String
+  username: String
+  password: String
+}
